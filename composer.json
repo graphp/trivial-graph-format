@@ -1,0 +1,23 @@
+{
+    "name": "graphp/trivial-graph-format",
+    "description": "Trivial Graph Format (TGF) is a simple text-based file format for describing graphs",
+    "keywords": ["Trivial Graph Format", "TGF"],
+    "homepage": "https://github.com/graphp/trivial-graph-format",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Lück",
+            "email": "christian@lueck.tv"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "clue/graph": "~0.8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {"Graphp\\TrivialGraphFormat\\": "src/"}
+    }
+}
