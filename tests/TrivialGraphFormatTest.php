@@ -1,10 +1,7 @@
 <?php
 
-use Fhaculty\Graph\Exporter\TrivialGraphFormat;
-
+use Graphp\TrivialGraphFormat\TrivialGraphFormat;
 use Fhaculty\Graph\Graph;
-
-use Fhaculty\Graph\Loader\CompleteGraph;
 
 class TrivialGraphFormatTest extends TestCase
 {

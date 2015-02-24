@@ -1,11 +1,12 @@
 <?php
 
-namespace Fhaculty\Graph\Exporter;
+namespace Graphp\TrivialGraphFormat;
 
 use Fhaculty\Graph\Edge\Directed;
 use Fhaculty\Graph\Edge\Base as Edge;
 use Fhaculty\Graph\Vertex;
 use Fhaculty\Graph\Graph;
+use Fhaculty\Graph\Exporter\ExporterInterface;
 
 /**
  * Trivial Graph Format (TGF) is a really simple format for describing graphs.
