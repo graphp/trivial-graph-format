@@ -22,6 +22,46 @@ class TrivialGraphFormat implements ExporterInterface
 {
     const EOL = PHP_EOL;
 
+    /**
+     * Exports the given graph instance.
+     *
+     * ```php
+     * $graph = new Fhaculty\Graph\Graph();
+     *
+     * $a = $graph->createVertex('a');
+     * $b = $graph->createVertex('b');
+     * $a->createEdgeTo($b);
+     *
+     * $exporter = new Graphp\TrivialGraphFormat\TrivialGraphFormat();
+     * $data = $exporter->getOutput($graph);
+     *
+     * file_put_contents('example.tgf', $data);
+     * echo $data;
+     * ```
+     *
+     * The TGF output will look something like this:
+     *
+     * ```
+     * 1 a
+     * 2 b
+     * #
+     * 1 2
+     * ```
+     *
+     * This method only supports exporting the basic graph structure, with all
+     * vertices and directed and undirected edges.
+     *
+     * Note that TGF does not support the notion of directed and undirected
+     * edges. As such, this method will print two edges in opposite directions
+     * for any undirected edges.
+     *
+     * Note that TGF does not support the notion of structured attributes. As
+     * such, this method will print the mathematical attributes as vertex and
+     * edge labels as appropriate.
+     *
+     * @param Graph $graph
+     * @return string
+     */
     public function getOutput(Graph $graph)
     {
         $output = '';
