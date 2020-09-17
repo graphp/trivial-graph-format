@@ -1,5 +1,7 @@
 <?php
 
+namespace Graph\Tests\TrivialGraphFormat;
+
 use Fhaculty\Graph\Graph;
 use Graphp\TrivialGraphFormat\TrivialGraphFormat;
 use PHPUnit\Framework\TestCase;
