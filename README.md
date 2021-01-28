@@ -1,4 +1,6 @@
-# graphp/trivial-graph-format [![Build Status](https://travis-ci.org/graphp/trivial-graph-format.svg?branch=master)](https://travis-ci.org/graphp/trivial-graph-format)
+# graphp/trivial-graph-format
+
+[![CI status](https://github.com/graphp/trivial-graph-format/workflows/CI/badge.svg)](https://github.com/graphp/trivial-graph-format/actions)
 
 [Trivial Graph Format](http://en.wikipedia.org/wiki/Trivial_Graph_Format) (TGF) is a simple text-based file format for describing graphs.
 
